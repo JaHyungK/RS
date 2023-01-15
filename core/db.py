@@ -2,8 +2,8 @@
 
 import mysql.connector
 
-_HOST = u''
-_PASSWORD = u''
+HOST = u''
+PASSWORD = u''
 
 
 def get_con_data_info(db='data_info'):
@@ -12,9 +12,9 @@ def get_con_data_info(db='data_info'):
 
     if conn is None:
         conn = mysql.connector.connect(
-            host=_HOST,
+            host=HOST,
             user='root',
-            password=_PASSWORD,
+            password=PASSWORD,
             db=db,
             charset='utf8'
         )
@@ -27,9 +27,9 @@ def get_con_smart_maker(db='smart_maker'):
 
     if conn is None:
         conn = mysql.connector.connect(
-            host=_HOST,
+            host=HOST,
             user='root',
-            password=_PASSWORD,
+            password=PASSWORD,
             db=db,
             charset='utf8'
         )
